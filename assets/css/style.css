@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Styles", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url(../images/bright.jpg);
+}
+
+.container {
+  background-color: lightpink;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h4 {
+  color: beige;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 1rem 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+.item a {
+  text-decoration: none;
+  color: indianred;
+  font-size: 1.2rem;
+}
+
+.item:hover {
+  background-color: violet;
+  transform: translateY(5px);
+}
+
+@media (max-width: 760px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .item {
+    padding: 1rem 3rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
